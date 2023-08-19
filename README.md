@@ -1,7 +1,7 @@
 # Helpdesk
 This repo is created to help build automation that makes helpdesk job easier.
 
-| Title | DEscription |Author|
+| Title | Description |Author|
 |-----:|---------------|-----|
 | Helpdesk Identity Proofing|This doc wil help customers set up Identity Proofing application which is required by their helpdesk teams while identifying people when they call helpdesk with any request               |purishd|
 
