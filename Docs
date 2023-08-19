@@ -9,8 +9,4 @@ author: purishd
 1. Build an Powerapp UI that will collect user's detail.
 2. Build Powerautomate flow to send an OTP to the user
 3. Record this OTP in SharePoint for verification and auditing purpose.
-| Rank | Languages |
-|-----:|-----------|
-|     1| Javascript|
-|     2| Python    |
-|     3| SQL       |
+
