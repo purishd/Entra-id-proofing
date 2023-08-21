@@ -54,4 +54,17 @@ Set(newOTP,SMSFlow.Run(UPNTextInput.Text).otp);
 This is how my Powerautomate flow looke like.
 ![image](https://github.com/purishd/Helpdesk/assets/11908199/caa34969-084f-4273-8dea-8a3345774e4f)
 
+1. Create a new instant cloud flow.
+2. Choose PowerApps as trigger of this flow.
+3. Intialize a variable that will collect the user UPN value from Power Apps.
+4. Get a graph token using the client credential flow. You can choose other ways to get a grpah token as you prefer.
+5. Parse the JSON output from above step to get the access token.
+6. Make a Grpah API call to get user's mobile number from user's authentication method.
+7. Parse the JSON output from above step to get the mobile number.
+8. Add compose action to get value of mobile number.
+9. Generate OTP using random generator function. You can choose your own OTP generator as you prefer.
+10. If mobile number from step 8 above is not null, then use Azure communication Resources connector to send an OTP on the mobile number.
+11. Send the generated OTP to Power App in a variable.
+
+
 # Audit record for OTP
