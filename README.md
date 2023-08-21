@@ -26,24 +26,24 @@ This is how my sample Power App looks like.
 ![image](https://github.com/purishd/Helpdesk/assets/11908199/e9891599-a7a3-43fc-877e-3efcd864e1d0)
 
 I have following controls in this super simple app.
-1. An Image for customer logo
-2. Label for the anme of the app
-3. Lable and text input to get the user UPN
+1. An Image for customer logo.
+2. Label for the name of the app.
+3. Label and text input to get the user UPN.
 4. Button to send the OTP that will hook into my Power Automate flow.
 
-I'm calling below code on "OnSelect" property of the Send OTP button.
+Calling below code on "OnSelect" property of the Send OTP button. This code will help set the buttonPressed and then call Power Automate flow and set the value of variable newOTP to generated OTP.
 ```
 Set(buttonPressed,"sendOTPButton");
 Set(newOTP,SMSFlow.Run(UPNTextInput.Text).otp);
 ```
 
-5. A hidden lable that only lights up when the OTP is generated and shows the generated OTP on the screen for helpdesk to view it quickly.
+5. A hidden label that only lights up when the OTP is generated and shows the generated OTP on the screen for helpdesk person to view it quickly.
 
-   I am only making this label visible when send OTP button is pressed and it picks up the OTP from Power Automate flow.
+   Making this label visible when send OTP button is pressed.
 ```
    If(buttonPressed = "sendOTPButton", true, false)
 ```
-   I am also setting the "Text" property of this button to variable newOTP. This variable is balnk initially but it's value is set when the Power Autoate flow sends the OTP back to the Power app.
+   Setting the "Text" property of this button to variable newOTP. This variable is blank initially but its value is set when the Power Autoate flow sends the OTP back to the Power App.
   
 6. A reset button that I am using to quickly reset the values of controls. Feel free to use any other ways as you like to reset the form values.
 ```
