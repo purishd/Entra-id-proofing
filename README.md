@@ -19,3 +19,6 @@ Build a Powerapp that can be used for Identity proofing.
 2. Build Powerautomate flow to that will read the user's mobile number and send OTP using Azure Communication Services.
 3. Record this OTP in a SharePoint List for verification and auditing purposes.
 
+# Build a Powerautomate flow
+This is how my Powerautomate flow looke like.
+![image](https://github.com/purishd/Helpdesk/assets/11908199/caa34969-084f-4273-8dea-8a3345774e4f)
