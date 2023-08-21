@@ -25,6 +25,14 @@ This is how my sample Power App looks like.
 
 ![image](https://github.com/purishd/Helpdesk/assets/11908199/e9891599-a7a3-43fc-877e-3efcd864e1d0)
 
+I have following controls in this super simple app.
+1. An Image for customer logo
+2. Label for the anme of the app
+3. Lable and text input to get the user UPN
+4. Button to send the OTP that will hook into my Power Automate flow.
+5. A hidden lable that only lights up when the OTP is generated and shows the generated OTP on the screen for helpdesk to view it quickly.
+6. A reset button that I am using to quickly reset the values of controls. Feel free to use any other ways as you like to reset the form values.. 
+
 # Build a Powerautomate flow
 This is how my Powerautomate flow looke like.
 ![image](https://github.com/purishd/Helpdesk/assets/11908199/caa34969-084f-4273-8dea-8a3345774e4f)
