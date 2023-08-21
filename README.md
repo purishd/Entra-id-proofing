@@ -30,11 +30,26 @@ I have following controls in this super simple app.
 2. Label for the anme of the app
 3. Lable and text input to get the user UPN
 4. Button to send the OTP that will hook into my Power Automate flow.
-  1. Set(buttonPressed,"sendOTPButton");
-  2. Set(newOTP,SMSFlow.Run(UPNTextInput.Text).otp);
-7. A hidden lable that only lights up when the OTP is generated and shows the generated OTP on the screen for helpdesk to view it quickly.
-8. A reset button that I am using to quickly reset the values of controls. Feel free to use any other ways as you like to reset the form values.
 
+I'm calling below code on "OnSelect" property of the Send OTP button.
+```
+Set(buttonPressed,"sendOTPButton");
+Set(newOTP,SMSFlow.Run(UPNTextInput.Text).otp);
+```
+
+5. A hidden lable that only lights up when the OTP is generated and shows the generated OTP on the screen for helpdesk to view it quickly.
+
+   I am only making this label visible when send OTP button is pressed and it picks up the OTP from Power Automate flow.
+```
+   If(buttonPressed = "sendOTPButton", true, false)
+```
+   I am also setting the "Text" property of this button to variable newOTP. This variable is balnk initially but it's value is set when the Power Autoate flow sends the OTP back to the Power app.
+  
+6. A reset button that I am using to quickly reset the values of controls. Feel free to use any other ways as you like to reset the form values.
+```
+   Reset(UPNTextInput);
+   Set(newOTP,"")
+```
 # Build a Powerautomate flow
 This is how my Powerautomate flow looke like.
 ![image](https://github.com/purishd/Helpdesk/assets/11908199/caa34969-084f-4273-8dea-8a3345774e4f)
