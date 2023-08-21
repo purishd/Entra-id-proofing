@@ -31,7 +31,7 @@ I have following controls in this super simple app.
 3. Lable and text input to get the user UPN
 4. Button to send the OTP that will hook into my Power Automate flow.
 5. A hidden lable that only lights up when the OTP is generated and shows the generated OTP on the screen for helpdesk to view it quickly.
-6. A reset button that I am using to quickly reset the values of controls. Feel free to use any other ways as you like to reset the form values.. 
+6. A reset button that I am using to quickly reset the values of controls. Feel free to use any other ways as you like to reset the form values.
 
 # Build a Powerautomate flow
 This is how my Powerautomate flow looke like.
