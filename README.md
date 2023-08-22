@@ -108,3 +108,5 @@ This is how my Powerautomate flow looke like.
 
 
 # Audit record for OTP
+
+# Set up Azure Coomunication services
