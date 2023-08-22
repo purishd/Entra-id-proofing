@@ -67,16 +67,28 @@ This is how my Powerautomate flow looke like.
    ![image](https://github.com/purishd/Helpdesk/assets/11908199/0228d6d2-40f6-4d35-9901-f9a733f7c602)
 
 7. Parse the JSON output from above step to get the access token.
-8. Make a Grpah API call to get user's mobile number from user's authentication method.
-9. Parse the JSON output from above step to get the mobile number.
-10. Add compose action to get value of mobile number.
-11. Generate OTP using random generator function. You can choose your own OTP generator as you prefer.
-12. If mobile number from step 8 above is not null, then use Azure communication Resources connector to send an OTP on the mobile number. Select Azure communication service SMS action.
+
+   ![image](https://github.com/purishd/Helpdesk/assets/11908199/eece5f1f-44ec-4cc6-a3d7-342aa4f6773c)
+
+9. Make a Graph API call to get user's mobile number from user's authentication method.
+
+    ![image](https://github.com/purishd/Helpdesk/assets/11908199/f617440d-6479-489b-a502-0914b58e2c8c)
+
+11. Parse the JSON output from above step to get the mobile number.
+
+    ![image](https://github.com/purishd/Helpdesk/assets/11908199/9546c676-328e-4a63-adc5-a5dff4580bb8)
+
+13. Add compose action to get value of mobile number.
+
+    ![image](https://github.com/purishd/Helpdesk/assets/11908199/aea4c72e-895a-4503-a35d-80f76c9ec7e1)
+
+15. Generate OTP using random generator function. You can choose your own OTP generator as you prefer.
+16. If mobile number from step 8 above is not null, then use Azure communication Resources connector to send an OTP on the mobile number. Select Azure communication service SMS action.
 
     - Create a new connection in Power Automate. Select Azure communication service SMS (Premium) and select authentication type (connection string or AAD application authentication)
     ![image](https://github.com/purishd/Helpdesk/assets/11908199/03a68788-a352-4d4d-b258-33b0425d8c76)
 
-13. Send the generated OTP to Power App in a variable.
+17. Send the generated OTP to Power App in a variable.
 
 
 # Audit record for OTP
