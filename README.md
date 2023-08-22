@@ -13,6 +13,8 @@ Build a super simple application that will generate OTP and send it to the user.
 
 ![image](https://github.com/purishd/Helpdesk/assets/11908199/8b6b8b6a-a71f-4c1f-84a7-444490f739eb)
 
+![image](https://github.com/purishd/Helpdesk/assets/11908199/56d109f3-eceb-4bc7-a5ab-edaa929940c3)
+
 
 # Objective
 Build a Powerapp that can be used for Identity proofing by customer helpdesk team.
