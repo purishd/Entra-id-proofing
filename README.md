@@ -83,12 +83,20 @@ This is how my Powerautomate flow looke like.
     ![image](https://github.com/purishd/Helpdesk/assets/11908199/aea4c72e-895a-4503-a35d-80f76c9ec7e1)
 
 15. Generate OTP using random generator function. You can choose your own OTP generator as you prefer.
-16. If mobile number from step 8 above is not null, then use Azure communication Resources connector to send an OTP on the mobile number. Select Azure communication service SMS action.
+
+    ![image](https://github.com/purishd/Helpdesk/assets/11908199/cbb6520c-be58-4768-b55b-e610e9953b14)
+
+17. If mobile number from step 8 above is not null, then use Azure communication Resources connector to send an OTP on the mobile number.
+
+    ![image](https://github.com/purishd/Helpdesk/assets/11908199/3e9d1786-f202-41e5-ab91-99562c5edd3e)
+
+    Select Azure communication service SMS action.
+    
 
     - Create a new connection in Power Automate. Select Azure communication service SMS (Premium) and select authentication type (connection string or AAD application authentication)
     ![image](https://github.com/purishd/Helpdesk/assets/11908199/03a68788-a352-4d4d-b258-33b0425d8c76)
 
-17. Send the generated OTP to Power App in a variable.
+19. Send the generated OTP to Power App in a variable.
 
 
 # Audit record for OTP
