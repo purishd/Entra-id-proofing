@@ -91,7 +91,10 @@ This is how my Powerautomate flow looke like.
     ![image](https://github.com/purishd/Helpdesk/assets/11908199/3e9d1786-f202-41e5-ab91-99562c5edd3e)
 
     Select Azure communication service SMS action.
-    
+
+    ![image](https://github.com/purishd/Helpdesk/assets/11908199/be16cd13-ab7b-403b-a991-b048f74a0c4c)
+
+    To do above, you could folow below steps.
 
     - Create a new connection in Power Automate. Select Azure communication service SMS (Premium) and select authentication type (connection string or AAD application authentication)
     ![image](https://github.com/purishd/Helpdesk/assets/11908199/03a68788-a352-4d4d-b258-33b0425d8c76)
