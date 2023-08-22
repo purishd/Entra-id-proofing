@@ -11,6 +11,9 @@ Often customer's end users call their helpdesk team to fix any issue for them su
 # Solution
 Build a super simple application that will generate OTP and send it to the user. Helpdesk can verify the user by requesting them for the same OTP.
 
+![image](https://github.com/purishd/Helpdesk/assets/11908199/8b6b8b6a-a71f-4c1f-84a7-444490f739eb)
+
+
 # Objective
 Build a Powerapp that can be used for Identity proofing.
 
