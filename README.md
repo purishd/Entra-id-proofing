@@ -101,5 +101,7 @@ This is how my Powerautomate flow looke like.
 
 19. Send the generated OTP to Power App in a variable.
 
+    ![image](https://github.com/purishd/Helpdesk/assets/11908199/ddc9f752-7533-49aa-bd82-12df9fd43e38)
+
 
 # Audit record for OTP
