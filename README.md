@@ -56,19 +56,27 @@ This is how my Powerautomate flow looke like.
 
 1. Create a new instant cloud flow.
 2. Choose PowerApps as trigger of this flow.
-3. Intialize a variable that will collect the user UPN value from Power Apps.
-4. Get a graph token using the client credential flow. You can choose other ways to get a grpah token as you prefer.
-5. Parse the JSON output from above step to get the access token.
-6. Make a Grpah API call to get user's mobile number from user's authentication method.
-7. Parse the JSON output from above step to get the mobile number.
-8. Add compose action to get value of mobile number.
-9. Generate OTP using random generator function. You can choose your own OTP generator as you prefer.
-10. If mobile number from step 8 above is not null, then use Azure communication Resources connector to send an OTP on the mobile number. Select Azure communication service SMS action.
+   
+   ![image](https://github.com/purishd/Helpdesk/assets/11908199/182114f9-571d-41ed-869f-ea5900b51320)
+
+4. Intialize a variable that will collect the user UPN value from Power Apps.
+   ![image](https://github.com/purishd/Helpdesk/assets/11908199/edfb4b98-682f-456e-9d05-c95336dff09c)
+
+5. Get a graph token using the client credential flow. You can choose other ways to get a grpah token as you prefer.
+   
+   ![image](https://github.com/purishd/Helpdesk/assets/11908199/0228d6d2-40f6-4d35-9901-f9a733f7c602)
+
+7. Parse the JSON output from above step to get the access token.
+8. Make a Grpah API call to get user's mobile number from user's authentication method.
+9. Parse the JSON output from above step to get the mobile number.
+10. Add compose action to get value of mobile number.
+11. Generate OTP using random generator function. You can choose your own OTP generator as you prefer.
+12. If mobile number from step 8 above is not null, then use Azure communication Resources connector to send an OTP on the mobile number. Select Azure communication service SMS action.
 
     - Create a new connection in Power Automate. Select Azure communication service SMS (Premium) and select authentication type (connection string or AAD application authentication)
     ![image](https://github.com/purishd/Helpdesk/assets/11908199/03a68788-a352-4d4d-b258-33b0425d8c76)
 
-12. Send the generated OTP to Power App in a variable.
+13. Send the generated OTP to Power App in a variable.
 
 
 # Audit record for OTP
