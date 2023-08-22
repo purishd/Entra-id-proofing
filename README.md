@@ -16,7 +16,7 @@ Build a Powerapp that can be used for Identity proofing.
 
 # Detailed Design
 1. Build a Powerapp UI that will collect user's UPN. This is the front-end that will be used by heldesk person to send OTP on user's mobile.
-2. Build Powerautomate flow to that will read the user's mobile number and send OTP using Azure Communication Services.
+2. Build Powerautomate flow that will read the user's mobile number and send OTP using Azure Communication Services.
 3. Record this OTP in a SharePoint List for verification and auditing purposes.
 
 # Build a Power App
