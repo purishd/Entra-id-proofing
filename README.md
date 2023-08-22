@@ -15,7 +15,7 @@ Build a super simple application that will generate OTP and send it to the user.
 
 
 # Objective
-Build a Powerapp that can be used for Identity proofing.
+Build a Powerapp that can be used for Identity proofing by customer helpdesk team.
 
 # Detailed Design
 1. Build a Powerapp UI that will collect user's UPN. This is the front-end that will be used by heldesk person to send OTP on user's mobile.
