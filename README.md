@@ -11,7 +11,7 @@ Often customer's end users call their helpdesk team to fix any issue for them su
 # Solution
 Build a super simple application that will generate OTP and send it to the user. Helpdesk can verify the user by requesting them for the same OTP.
 
-![image](https://github.com/purishd/Helpdesk/assets/11908199/36ff075b-7d02-4c38-9342-6ad71075bc97)
+![image](https://github.com/purishd/Helpdesk/assets/11908199/fb3af27e-bf35-4a36-9e92-aa1a66cae03a)
 
 
 # Objective
