@@ -56,6 +56,13 @@ Set(newOTP,SMSFlow.Run(UPNTextInput.Text).otp);
    Reset(UPNTextInput);
    Set(newOTP,"")
 ```
+# Set up Azure Communication services
+An "Communication services" resource has been set up in Azure subscription, an Alphanumeric sender ID is enabled for one-way outbound SMS used for sending OTP to user's mobile number. 
+
+*Create communication services resource:* https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/create-communication-resource?tabs=windows&pivots=platform-azp
+
+*Enable Alphanumeric Sender ID:* https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/sms/enable-alphanumeric-sender-id
+
 # Build a Powerautomate flow
 This is how the Powerautomate flow looks like.
 ![image](https://github.com/purishd/Helpdesk/assets/11908199/2f4ed1ca-d671-4401-b875-ecc83ed7d062)
@@ -121,11 +128,7 @@ For audit record, a SharePoint list is being used. In Power Automate flow use Cr
 
 ![image](https://github.com/purishd/Helpdesk/assets/11908199/828917db-035c-405b-bae9-e42b5389a98a)
 
+This is how the SharePoint record will look like. You could choose to add/remove/modify fields as per your preferce.
 
-# Set up Azure Communication services
-An "Communication services" resource has been set up in Azure subscription, an Alphanumeric sender ID is enabled for one-way outbound SMS used for sending OTP to user's mobile number. 
-
-*Create communication services resource:* https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/create-communication-resource?tabs=windows&pivots=platform-azp
-
-*Enable Alphanumeric Sender ID:* https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/sms/enable-alphanumeric-sender-id
+![image](https://github.com/purishd/Helpdesk/assets/11908199/f62a8c4a-be07-4471-93ca-72a1fe37bc09)
 
