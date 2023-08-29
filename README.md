@@ -57,8 +57,9 @@ Set(newOTP,SMSFlow.Run(UPNTextInput.Text).otp);
    Set(newOTP,"")
 ```
 # Build a Powerautomate flow
-This is how my Powerautomate flow looke like.
-![image](https://github.com/purishd/Helpdesk/assets/11908199/caa34969-084f-4273-8dea-8a3345774e4f)
+This is how the Powerautomate flow looks like.
+![image](https://github.com/purishd/Helpdesk/assets/11908199/2f4ed1ca-d671-4401-b875-ecc83ed7d062)
+
 
 1. Create a new instant cloud flow.
 2. Choose PowerApps as trigger of this flow.
