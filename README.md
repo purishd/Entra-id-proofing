@@ -102,9 +102,14 @@ This is how the Powerautomate flow looks like.
     ![image](https://github.com/purishd/Helpdesk/assets/11908199/be16cd13-ab7b-403b-a991-b048f74a0c4c)
 
     To do above, you could follow below steps to create a new ACS SMS connection. Once the connection is created, you can follow above steps to configure ACS to send OTP on user's mobile number.
+    
+    - For this sample, keys have been used for authentication. Go to Azure communication services resource keys section and copy the connection string.      
+      ![image](https://github.com/purishd/Helpdesk/assets/11908199/da5c0870-327d-4ee4-9ccb-f4583073728e)
+      
+    - Create a new connection in Power Automate. Select Azure communication service SMS (Premium) and select authentication type (connection string or AAD application authentication) as you prefer. Use the connection string from previous step to create a successful connection.
+      
+      ![image](https://github.com/purishd/Helpdesk/assets/11908199/03a68788-a352-4d4d-b258-33b0425d8c76)
 
-    - Create a new connection in Power Automate. Select Azure communication service SMS (Premium) and select authentication type (connection string or AAD application authentication) as you prefer.
-    ![image](https://github.com/purishd/Helpdesk/assets/11908199/03a68788-a352-4d4d-b258-33b0425d8c76)
 
 19. Send the generated OTP to Power App in a variable.
 
