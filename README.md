@@ -26,7 +26,9 @@ Build a Powerapp that can be used for Identity proofing by customer helpdesk tea
 
 This is how my sample Power App looks like.
 
-![image](https://github.com/purishd/Helpdesk/assets/11908199/e9891599-a7a3-43fc-877e-3efcd864e1d0)
+![image](https://github.com/purishd/Helpdesk/assets/11908199/96520e34-eb28-42e8-9cb0-d46685a5d20f)
+
+
 
 I have following controls in this super simple app.
 1. An Image for customer logo.
@@ -108,5 +110,8 @@ This is how my Powerautomate flow looke like.
 
 
 # Audit record for OTP
+For audit record, a SharePoint list is being used. In Power Automate flow use Creat item action of SharePoint to add an audit entry on your chose SharePoint list.
+![image](https://github.com/purishd/Helpdesk/assets/11908199/828917db-035c-405b-bae9-e42b5389a98a)
+
 
 # Set up Azure Communication services
