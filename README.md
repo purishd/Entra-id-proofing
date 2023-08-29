@@ -6,7 +6,7 @@ This repo is created to help build automation that makes helpdesk job easier.
 | Helpdesk Identity Proofing|This doc wil help customers set up Identity Proofing application which is required by their helpdesk teams while identifying people when they call helpdesk with any request               |purishd|
 
 # Problem Statement
-Often customer's end users call their helpdesk team to fix any issue for them such us updating their user profile, password reset etc. The helpdesk team needs to verify the users. For that purpose, they ask the end users some of their personal information such as DOB, drivers license, employee ID etc. to confirm the user's Identity. This is an Identity Proofing scenario that need not rely on pesonal information necessarily but something super simple. If somehting as simple as sending an OTP to the calling user on their mobile and ask them to verify the same back with the helpdesk could be a potential solution, then the help desk don't need to necessarily delve into user's personal information.
+Often customer's end users call their helpdesk team to fix any issue for them such us updating their user profile, password reset etc. The helpdesk team needs to verify the users. For that purpose, they ask the end users some of their personal information such as DOB, drivers license, employee ID etc. to confirm the user's Identity. This is an Identity Proofing scenario that need not rely on pesonal information necessarily but something super simple. If something as simple as sending an OTP to the calling user on their mobile and asking them to verify the same back with the helpdesk could be a potential solution, then the help desk don't need to necessarily delve into user's personal information.
 
 # Solution
 Build a super simple application that will generate OTP and send it to the user. Helpdesk can verify the user by requesting them for the same OTP.
@@ -65,7 +65,7 @@ This is how my Powerautomate flow looke like.
 4. Intialize a variable that will collect the user UPN value from Power Apps.
    ![image](https://github.com/purishd/Helpdesk/assets/11908199/edfb4b98-682f-456e-9d05-c95336dff09c)
 
-5. Get a graph token using the client credential flow. You can choose other ways to get a grpah token as you prefer.
+5. Get a graph token using the client credential flow. You can choose other ways to get a graph token as you prefer.
    
    ![image](https://github.com/purishd/Helpdesk/assets/11908199/0228d6d2-40f6-4d35-9901-f9a733f7c602)
 
