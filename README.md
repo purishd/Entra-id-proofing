@@ -26,7 +26,8 @@ Build a Powerapp that can be used for Identity proofing by customer helpdesk tea
 
 This is how my sample Power App looks like.
 
-![image](https://github.com/purishd/Helpdesk/assets/11908199/96520e34-eb28-42e8-9cb0-d46685a5d20f)
+![image](https://github.com/purishd/Helpdesk/assets/11908199/2802f697-71cc-4a90-9b78-2acbc1ea391a)
+
 
 
 
