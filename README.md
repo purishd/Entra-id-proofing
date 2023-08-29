@@ -22,6 +22,18 @@ Build a Powerapp that can be used for Identity proofing by customer helpdesk tea
 2. Build Powerautomate flow that will read the user's mobile number and send OTP using Azure Communication Services.
 3. Record this OTP in a SharePoint List for verification and auditing purposes.
 
+# Prerequisites
+These are the resources that are needed to be set up before starting to build the Power App and Power Automate flow.
+## Set up Azure Communication services
+An "Communication services" resource has been set up in Azure subscription, an Alphanumeric sender ID is enabled for one-way outbound SMS used for sending OTP to user's mobile number. 
+
+*Create communication services resource:* https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/create-communication-resource?tabs=windows&pivots=platform-azp
+
+*Enable Alphanumeric Sender ID:* https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/sms/enable-alphanumeric-sender-id
+
+## Create a SharePoint connection in Power Automate Data connections
+This connection is used to update list item on SharePoint list for audit prupose.
+![image](https://github.com/purishd/Helpdesk/assets/11908199/f996acdc-3799-428c-a980-193b935ef053)
 # Build a Power App
 
 This is how my sample Power App looks like.
@@ -56,12 +68,7 @@ Set(newOTP,SMSFlow.Run(UPNTextInput.Text).otp);
    Reset(UPNTextInput);
    Set(newOTP,"")
 ```
-# Set up Azure Communication services
-An "Communication services" resource has been set up in Azure subscription, an Alphanumeric sender ID is enabled for one-way outbound SMS used for sending OTP to user's mobile number. 
 
-*Create communication services resource:* https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/create-communication-resource?tabs=windows&pivots=platform-azp
-
-*Enable Alphanumeric Sender ID:* https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/sms/enable-alphanumeric-sender-id
 
 # Build a Powerautomate flow
 This is how the Powerautomate flow looks like.
