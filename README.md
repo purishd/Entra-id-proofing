@@ -5,6 +5,9 @@ This repo is created to help build automation that makes helpdesk job easier.
 |-----:|---------------|-----|
 | Helpdesk Identity Proofing|This doc wil help customers set up Identity Proofing application which is required by their helpdesk teams while identifying people when they call helpdesk with any request               |purishd|
 
+# Disclaimer
+The purpose of this is to show a way to leverage the low code approach to build something quicker. This solution is currently a Minimum Viable Product (MVP) that one can leverage, extend it and build something of their own. This doucmentation will evolve as we buid more scenarios into it as we have more ideas waiting to be built into this solution.
+
 # Problem Statement
 Often customer's end users call their helpdesk team to fix any issue for them such us updating their user profile, password reset etc. The helpdesk team needs to verify the users. For that purpose, they ask the end users some of their personal information such as DOB, drivers license, employee ID etc. to confirm the user's Identity. This is an Identity Proofing scenario that need not rely on pesonal information necessarily but something super simple. If something as simple as sending an OTP to the calling user on their mobile and asking them to verify the same back with the helpdesk could be a potential solution, then the help desk don't need to necessarily delve into user's personal information.
 
