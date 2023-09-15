@@ -1,10 +1,10 @@
-# Helpdesk
+# Helpdesk Identity Proofing
 
 This repo is created to help build automation that makes helpdesk job easier.
 
 | Title | Description |Author|
 |-----:|---------------|-----|
-| Identity Proofing Made Easy|This doc wil help customers set up Identity Proofing application which is often required by their helpdesk teams while verifying people when they call helpdesk with any request.               |purishd|
+| Identity Proofing Made Easy|This doc will help customers set up Identity Proofing application which is often required by their helpdesk teams while verifying people when they call helpdesk with any request.               |purishd|
 
 # Disclaimer
 
@@ -25,7 +25,7 @@ Build a super simple application that will generate OTP and send it to the user.
 
 
 # Objective
-Build a Powerapp that can be used for Identity proofing by customer helpdesk team.
+Build a Power App that can be used for Identity proofing by customer helpdesk team.
 
 # Detailed Design
 1. Build a Power App UI that will collect user's UPN. This is the front-end that will be used by helpdesk person to send OTP on user's mobile.
@@ -46,14 +46,11 @@ This connection is used to update list item on SharePoint list for audit purpose
 ![image](/assets/SharePointConnector.png)
 # Build a Power App
 
-This is how my sample Power App looks like.
+This is how my sample Power App looks like. Follow below guidelines to create a similar Power App or use your own creativity to extend this Power App and make it even better.
 
 ![image](/assets/PowerappUI.png)
 
-
-
-
-I have following controls in this super simple app.
+Following controls are being used in this super simple app.
 1. An Image for customer logo.
 2. Label for the name of the app.
 3. Label and text input to get the user UPN.
