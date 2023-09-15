@@ -26,9 +26,6 @@ Watch the video below to understand the high level flow.
 
 https://github.com/purishd/Helpdesk/assets/11908199/118b8c93-3f73-41f8-9e82-2c85d3f2c601
 
-# Objective
-
-Build a Power App that can be used for Identity proofing by customer helpdesk team.
 
 # Detailed Design
 
@@ -41,7 +38,11 @@ From technical implementation perspective, the sequence diagram above translates
 2. Build Power Automate flow that will read the user's mobile number and send OTP using Azure Communication Services.
 3. Record this OTP in a SharePoint List for verification and auditing purposes.
 
-# Prerequisites
+## Objective
+
+Build a Power App that can be used for Identity proofing by your helpdesk team.
+
+## Prerequisites
 These are the resources that are needed to be set up before starting to build the Power App and Power Automate flow.
 ## Set up Azure Communication services
 An "Communication services" resource has been set up in Azure subscription, an Alphanumeric sender ID is enabled for one-way outbound SMS used for sending OTP to user's mobile number. 
