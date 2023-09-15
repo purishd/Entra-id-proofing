@@ -4,11 +4,13 @@ This repo is created to help build automation that makes helpdesk job easier.
 
 | Title | Description |Author|
 |-----:|---------------|-----|
-| Helpdesk Identity Proofing|This doc wil help customers set up Identity Proofing application which is required by their helpdesk teams while identifying people when they call helpdesk with any request               |purishd|
+| Identity Proofing Made Easy|This doc wil help customers set up Identity Proofing application which is often required by their helpdesk teams while verifying people when they call helpdesk with any request.               |purishd|
 
 # Disclaimer
+
 The purpose of this is to show a way to leverage the low code approach to build something quicker. This solution is currently a Minimum Viable Product (MVP) that one can leverage, extend it and build something of their own. The documentation will evolve as we build more scenarios into it as we have more ideas waiting to be built into this solution.
 Few scenarios that we are looking to build further into this are:
+
 1. Share TAP(Temporary Access Pass) with end users for Identity Proofing.
 2. Use the reverse flow to do Identity Proofing when helpdesk initiates a call to the end user.
 3. A few more as we learn.
@@ -79,7 +81,7 @@ Set(newOTP,SMSFlow.Run(UPNTextInput.Text).otp);
 
 
 # Build a Powerautomate flow
-Follow below steps to create Power Automate Flow.
+Follow below steps to create Power Automate Flow. This is how your overall flow will look like once all the steps are added to it.
 
 ![image](/assets/FlowOverall.png)
 
