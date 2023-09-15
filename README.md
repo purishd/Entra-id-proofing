@@ -1,4 +1,4 @@
-# Helpdesk Identity Proofing
+# Entra Identity Proofing
 
 This repo is created to help build automation that makes helpdesk job easier.
 
