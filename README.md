@@ -24,22 +24,19 @@ Build a super simple application that will generate OTP and send it to the user.
 
 Watch the video below to understand the high level flow.
 
-
-
 https://github.com/purishd/Helpdesk/assets/11908199/118b8c93-3f73-41f8-9e82-2c85d3f2c601
 
+# Objective
 
+Build a Power App that can be used for Identity proofing by customer helpdesk team.
 
+# Detailed Design
 
 Here is a sequence diagram representing the detailed flow.
 
 ![image](/assets/SequenceDiagram.png)
 
-
-# Objective
-Build a Power App that can be used for Identity proofing by customer helpdesk team.
-
-# Detailed Design
+From technical implementation perspective, the sequence diagram above translates into following high level steps.
 1. Build a Power App UI that will collect user's UPN. This is the front-end that will be used by helpdesk person to send OTP on user's mobile.
 2. Build Power Automate flow that will read the user's mobile number and send OTP using Azure Communication Services.
 3. Record this OTP in a SharePoint List for verification and auditing purposes.
