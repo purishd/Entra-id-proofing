@@ -19,7 +19,15 @@ Few scenarios that we are looking to build further into this are:
 Often customer's end users call their helpdesk team to fix any issue for them such us updating their user profile, password reset etc. The helpdesk team needs to verify the users. For that purpose, they ask the end users some of their personal information such as DOB, drivers license, employee ID etc. to confirm the user's Identity. This is an Identity Proofing scenario that need not rely on personal information necessarily but something super simple. If something as simple as sending an OTP to the calling user on their mobile and asking them to verify the same back with the helpdesk could be a potential solution, then the help desk don't need to necessarily delve into user's personal information.
 
 # Solution
+
 Build a super simple application that will generate OTP and send it to the user. Helpdesk can verify the user by requesting them for the same OTP.
+
+Watch the video below to understand the high level flow.
+
+<video src=/assets/IdentityProofing.mp4> </video>
+
+
+Here is a sequence diagram representing the detailed flow.
 
 ![image](/assets/SequenceDiagram.png)
 
