@@ -87,7 +87,7 @@ Set(newOTP,SMSFlow.Run(UPNTextInput.Text).otp);
 ```
 
 
-# Build a Powerautomate flow
+# Build a Power Automate flow
 Follow below steps to create Power Automate Flow. This is how your overall flow will look like once all the steps are added to it.
 
 ![image](/assets/FlowOverall.png)
