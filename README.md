@@ -7,20 +7,21 @@ This repo is created to help build automation that makes helpdesk job easier.
 | Identity Proofing Made Easy|This doc will help customers set up Identity Proofing application which is often required by their helpdesk teams while verifying people when they call helpdesk with any request.               |purishd|
 
 # Disclaimer
+Please note that we are aware of security risks pertaining to use of single use one-time codes. However, the one-time code used in this solution is not tied to any authentication service as such, hence unusable for any sort of attack. A term IPC (Identity Proofing Code) is being used which is similar to well known One time password(OTP).
 
-The purpose of this is to show a way to leverage the low code approach to build something quicker. This solution is currently a Minimum Viable Product (MVP) that one can leverage, extend it and build something of their own. The documentation will evolve as we build more scenarios into it as we have more ideas waiting to be built into this solution.
+The purpose of this is to show a way to leverage the low code approach to build a quicker Identity Proofing solution. This solution is currently a Minimum Viable Product (MVP) that one can leverage, extend it and build something of their own. The documentation will evolve as we build more scenarios into it as we have more ideas waiting to be built into this solution.
 Few scenarios that we are looking to build further into this are:
 
-1. Share TAP(Temporary Access Pass) with end users for Identity Proofing.
+1. Share TAP(Temporary Access Pass) with end users post Identity Proofing.
 2. Use the reverse flow to do Identity Proofing when helpdesk initiates a call to the end user.
 3. A few more as we learn.
 
 # Problem Statement
-Often customer's end users call their helpdesk team to fix any issue for them such us updating their user profile, password reset etc. The helpdesk team needs to verify the users. For that purpose, they ask the end users some of their personal information such as DOB, drivers license, employee ID etc. to confirm the user's Identity. This is an Identity Proofing scenario that need not rely on personal information necessarily but something super simple. If something as simple as sending an OTP to the calling user on their mobile and asking them to verify the same back with the helpdesk could be a potential solution, then the help desk don't need to necessarily delve into user's personal information.
+Often customer's end users call their helpdesk team to fix any issue for them such us updating their user profile, password reset etc. The helpdesk team needs to verify the users. For that purpose, they ask the end users some of their personal information such as DOB, drivers license, employee ID etc. to confirm the user's Identity. This is an Identity Proofing scenario that need not rely on personal information necessarily but something super simple. If something as simple as sending an Identity Proofing Code (IPC) to the calling user on their mobile and asking them to verify the same back with the helpdesk could be a potential solution, then the help desk don't need to necessarily delve into user's personal information.
 
 # Solution
 
-Build a super simple application that will generate OTP and send it to the user. Helpdesk can verify the user by requesting them for the same OTP.
+Build a super simple application that will generate Identity Proofing Code (IPC) and send it to the user. Helpdesk can verify the user by requesting them for the same OTP.
 
 Watch the video below to understand the high level flow.
 
@@ -34,9 +35,9 @@ Here is a sequence diagram representing the detailed flow.
 ![image](/assets/SequenceDiagram.png)
 
 From technical implementation perspective, the sequence diagram above translates into following high level steps.
-1. Build a Power App UI that will collect user's UPN. This is the front-end that will be used by helpdesk person to send OTP on user's mobile.
-2. Build Power Automate flow that will read the user's mobile number and send OTP using Azure Communication Services.
-3. Record this OTP in a SharePoint List for verification and auditing purposes.
+1. Build a Power App UI that will collect user's UPN. This is the front-end that will be used by helpdesk person to send Identity Proofing Code (IPC) on user's mobile.
+2. Build Power Automate flow that will read the user's mobile number and send Identity Proofing Code (IPC) using Azure Communication Services.
+3. Record this Identity Proofing Code (IPC) in a SharePoint List for verification and auditing purposes.
 
 ## Objective
 
@@ -45,7 +46,7 @@ Build a Power App that can be used for Identity proofing by your helpdesk team.
 ## Prerequisites
 These are the resources that are needed to be set up before starting to build the Power App and Power Automate flow.
 ## Set up Azure Communication services
-An "Communication services" resource has been set up in Azure subscription, an Alphanumeric sender ID is enabled for one-way outbound SMS used for sending OTP to user's mobile number. 
+An "Communication services" resource has been set up in Azure subscription, an Alphanumeric sender ID is enabled for one-way outbound SMS used for sending Identity Proofing Code (IPC) to user's mobile number. 
 
 *Create communication services resource:* https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/create-communication-resource?tabs=windows&pivots=platform-azp
 
@@ -64,7 +65,7 @@ Following controls are being used in this super simple app.
 1. An Image for customer logo.
 2. Label for the name of the app.
 3. Label and text input to get the user UPN.
-4. Button to send the OTP that will hook into my Power Automate flow.
+4. Button to send the Identity Proofing Code (IPC) that will hook into my Power Automate flow.
 
 Calling below code on "OnSelect" property of the Send OTP button. This code will help set the buttonPressed and then call Power Automate flow and set the value of variable newOTP to generated OTP.
 ```
@@ -121,11 +122,11 @@ Follow below steps to create Power Automate Flow. This is how your overall flow 
 
     ![image](/assets/ComposeMobile.png)
 
-15. Generate OTP using random generator function. You can choose your own OTP generator as you prefer.
+15. Generate Identity Proofing Code (IPC) using random generator function. You can choose your own OTP generator as you prefer.
 
     ![image](/assets/GenerateOTP.png)
 
-17. If mobile number from step 8 above is not null, then use Azure communication Resources connector to send an OTP on the mobile number.
+17. If mobile number from step 8 above is not null, then use Azure communication Resources connector to send an Identity Proofing Code (IPC) on the mobile number.
 
     ![image](/assets/ConditionMobileNotNull.png)
 
@@ -133,7 +134,7 @@ Follow below steps to create Power Automate Flow. This is how your overall flow 
 
     ![image](/assets/SendSMS.png)
 
-    To do above, you could follow below steps to create a new ACS SMS connection. Once the connection is created, you can follow above steps to configure ACS to send OTP on user's mobile number.
+    To do above, you could follow below steps to create a new ACS SMS connection. Once the connection is created, you can follow above steps to configure ACS to send Identity Proofing Code (IPC) on user's mobile number.
     
     - For this sample, keys have been used for authentication. Go to Azure communication services resource keys section and copy the connection string.      
       ![image](/assets/ACSSendSMSAzurePortal.png)
@@ -148,7 +149,7 @@ Follow below steps to create Power Automate Flow. This is how your overall flow 
     ![image](/assets/RespondtoPowerApp.png)
 
 
-# Audit record for OTP
+# Audit record for Identity Proofing Code (IPC)
 For audit record, a SharePoint list is being used. In Power Automate flow use Create item action of SharePoint to add an audit entry on your chose SharePoint list.
 
 ![image](/assets/SharePointCreateItem.png)
