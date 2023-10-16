@@ -8,7 +8,7 @@
 
 | Acronym | Description |Comment|
 |-----:|---------------|-----|
-| MVP|Minimum Viable Product              |It is simlary to widely known term OTP|
+| MVP|Minimum Viable Product              |Minimum features supported by the product, can be extended as required|
 | IPC|Identity Proofing Code               |It is simlary to widely known term OTP|
 
 # Disclaimer
