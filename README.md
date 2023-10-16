@@ -1,7 +1,5 @@
 # Entra Identity Proofing
 
-This repo is created to help build automation that makes helpdesk job easier.
-
 | Title | Description |Author|
 |-----:|---------------|-----|
 | Identity Proofing Made Easy|This doc will help customers set up Identity Proofing application which is often required by their helpdesk teams while verifying people when they call helpdesk with any request.               |purishd|
