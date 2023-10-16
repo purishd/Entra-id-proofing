@@ -14,7 +14,7 @@
 # Disclaimer
 Please note that we are aware of security risks pertaining to use of single use one-time codes. However, the one-time code used in this solution is not tied to any authentication service as such, hence unusable for any sort of attack. A term IPC is being used which is similar to well known term One time password(OTP).
 
-The purpose of building this is to show a way to leverage the low code approach to build a quicker Identity Proofing solution. This solution is currently a MVP that one can leverage, extend it and build something of their own. The documentation will evolve as we build more scenarios into it as we have more ideas waiting to be built into this solution.
+The intent of building this sloution is to show a way to leverage the low code approach to build a quicker Identity Proofing solution. This solution is currently a MVP that one can leverage, extend it and build something of their own. The documentation will evolve as we build more scenarios into it as we have more ideas waiting to be built into this solution.
 Few scenarios that we are looking to build further into this are:
 
 1. Share TAP(Temporary Access Pass) with end users post Identity Proofing.
