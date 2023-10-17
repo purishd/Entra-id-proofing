@@ -27,7 +27,7 @@ Often customer's end users call their helpdesk team to fix any issue for them su
 
 # Solution
 
-Build a super simple application that will generate IPC and send it to the user. Helpdesk can verify the user by requesting them for the same OTP.
+Build a super simple application that will generate IPC and send it to the user. Helpdesk can verify the user by requesting them for the same IPC.
 
 Watch the video below to understand the high level flow.
 
@@ -72,19 +72,19 @@ Following controls are being used in this super simple app.
 3. Label and text input to get the user UPN.
 4. Button to send the IPC that will hook into my Power Automate flow.
 
-Calling below code on "OnSelect" property of the Send OTP button. This code will help set the buttonPressed and then call Power Automate flow and set the value of variable newOTP to generated OTP.
+Calling below code on "OnSelect" property of the Send IPC button. This code will help set the buttonPressed and then call Power Automate flow and set the value of variable newOTP to generated IPC.
 ```
 Set(buttonPressed,"sendOTPButton");
 Set(newOTP,SMSFlow.Run(UPNTextInput.Text).otp);
 ```
 
-5. A hidden label that only lights up when the OTP is generated and shows the generated OTP on the screen for helpdesk person to view it quickly.
+5. A hidden label that only lights up when the IPC is generated and shows the generated IPC on the screen for helpdesk person to view it quickly.
 
-   Making this label visible when send OTP button is pressed.
+   Making this label visible when send IPC button is pressed.
 ```
    If(buttonPressed = "sendOTPButton", true, false)
 ```
-   Setting the "Text" property of this button to variable newOTP. This variable is blank initially but its value is set when the Power Automate flow sends the OTP back to the Power App.
+   Setting the "Text" property of this button to variable newOTP. This variable is blank initially but its value is set when the Power Automate flow sends the IPC back to the Power App.
   
 6. A reset button that I am using to quickly reset the values of controls. Feel free to use any other ways as you like to reset the form values.
 ```
