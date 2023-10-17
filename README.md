@@ -31,8 +31,7 @@ Build a super simple application that will generate IPC and send it to the user.
 
 Watch the video below to understand the high level flow.
 
-https://github.com/purishd/Helpdesk/assets/11908199/118b8c93-3f73-41f8-9e82-2c85d3f2c601
-
+https://github.com/purishd/Entra-id-proofing/assets/11908199/b69f92c2-c453-4d2b-a6d0-b9c0c3e117cd
 
 # Detailed Design
 
